@@ -1,6 +1,5 @@
 package example;
 
-import java.util
 
 import org.scalatest.FunSuite;
 
@@ -16,7 +15,12 @@ class ArrayTest extends FunSuite {
         println(arr1)
         println(arr1.length)
         for (a <- arr1) {
-            println(a)
+            println(a) // a b c
+        }
+
+        arr1(0) = "d"
+        for (a <- arr1) {
+            println(a) // d b c
         }
     }
 
@@ -34,6 +38,7 @@ class ArrayTest extends FunSuite {
         println(arr3.length) // 5
     }
 
+    // range
     test("array4") {
         // 不包括 end
         val arr1 = Array.range(0, 6, 2)

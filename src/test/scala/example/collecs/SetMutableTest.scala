@@ -1,6 +1,7 @@
-package example
+package example.collecs
 
 import org.scalatest.FunSuite
+
 import scala.collection.mutable.Set
 
 class SetMutableTest extends FunSuite {
@@ -14,10 +15,18 @@ class SetMutableTest extends FunSuite {
         set1.remove(5)
         println(set1) // Set(1, 2, 3)
 
+        // 添加 元素
         set1 += 6
         println(set1) // Set(1, 2, 6, 3)
 
+        // 删除 元素
         set1 -= 7
         println(set1) // Set(1, 2, 6, 3)
+    }
+
+    test("min_max") {
+        val set1 = Set("A", "B", "a")
+        println(set1.min) // A
+        println(set1.max) // a
     }
 }

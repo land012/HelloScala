@@ -28,10 +28,20 @@ class FunctionTest extends FunSuite {
         println("delayed:" + t)
     }
 
+    /*
+     current nanotime 25169341542431
+     in delayed
+     delayed:25169341542431
+     */
     test("call_func") {
         delayed(time)
     }
 
+    /*
+     current nanotime 25226496624316
+     in delayed
+     delayed:25226496624316
+     */
     test("call_func2") {
         delayed(time())
     }
