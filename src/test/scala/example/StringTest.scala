@@ -10,4 +10,10 @@ class StringTest extends FunSuite {
     test("charAt") {
         println("abc".charAt(1)) // b
     }
+
+    test("equal") {
+        val str1 = "abc"
+        val str2 = new String("abc")
+        println(str1 == str2) // true
+    }
 }

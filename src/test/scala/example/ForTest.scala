@@ -59,6 +59,12 @@ class ForTest extends FunSuite {
         println(list2) // Vector(2, 4, 6)
     }
 
+    test("for_array") {
+        for (x <- Array.range(0, 10, 2)) {
+            println(x) // 0 2 4 6 8
+        }
+    }
+
     test("break1") {
         val loop1 = new Breaks
         loop1.breakable {

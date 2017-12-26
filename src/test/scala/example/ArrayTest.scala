@@ -43,7 +43,13 @@ class ArrayTest extends FunSuite {
         // 不包括 end
         val arr1 = Array.range(0, 6, 2)
         for (x <- arr1) {
-            println(x)
+            println(x) // 0 2 4
         }
+    }
+
+    test("array_reduce") {
+        // 不包括 end
+        val arr1 = Array.range(0, 6, 2)
+        println(arr1.reduce((a, b) => a + b)) // 6
     }
 }
