@@ -7,8 +7,8 @@ class Point(px : Int, py : Int) {
     println("I am " + this)
 
     def move(dx : Int, dy : Int): Unit = {
-        x = x + dx
-        y = y + dy
+        this.x = x + dx
+        this.y = y + dy
     }
 
     override def toString: String = {

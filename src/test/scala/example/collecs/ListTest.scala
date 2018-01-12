@@ -19,4 +19,13 @@ class ListTest extends FunSuite {
         val l1 = List.fill(3)("Tom")
         println(l1) // List(Tom, Tom, Tom)
     }
+
+    test("map") {
+        val l1 = List(1, 2, 3)
+        val r1 = l1.map(x => x match {
+            case 3 => List('a', 'b')
+            case _ => List(x * 2)
+        })
+        println(r1)
+    }
 }

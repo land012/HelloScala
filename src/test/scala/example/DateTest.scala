@@ -11,7 +11,7 @@ class DateTest extends FunSuite {
     test("date_test") {
         // 2017-12-19
         val cal1 : Calendar = new Calendar.Builder()
-            .setDate(2017, 11, 19)
+            .setDate(2017, 11, 18)
             .build()
         println(cal1.getTime) // Tue Dec 19 00:00:00 CST 2017
         cal1.add(Calendar.DAY_OF_MONTH, -89)
